@@ -113,7 +113,7 @@ def encode(s):
     if six.PY2:
         if isinstance(s, unicode):
             s = s.encode("utf-8")
-            return [ord(c) + RESERVED for c in s]
+        return [ord(c) + RESERVED for c in s]
     # Python3: explicitly convert to UTF-8
     return [c + RESERVED for c in s.encode("utf-8")]
 
