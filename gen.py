@@ -156,7 +156,7 @@ def convert_data(cache_file):
             print('Processed %d of %d items' % (i, len(data)))
 
         enc = encode(data[i][:FLAGS.maxlen])
-        x.append([_START] + enc[:-1] + [_PAD] * (FLAGS.maxlen - len(enc)))
+        x.append([_START] + enc + [_PAD] * (FLAGS.maxlen - len(enc) - 1))
         y.append(enc + [_PAD] * (FLAGS.maxlen - len(enc)))
 
     x = np.array(x, dtype=np.int32)
