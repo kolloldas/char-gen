@@ -1,6 +1,9 @@
 # char-gen
-Simple character RNN generation using tf.contrib.learn.Experiment
-You can train the system to generate short character sequences like names and phrases. Get a list of baby names from Kaggle [here](https://www.kaggle.com/kaggle/us-baby-names/data)
+Simple character RNN generation using [tf.contrib.learn.Experiment](https://www.tensorflow.org/api_docs/python/tf/contrib/learn/Experiment)
+
+You can train the system to generate short character sequences like names and phrases. 
+
+Get a list of baby names from Kaggle [here](https://www.kaggle.com/kaggle/us-baby-names/data)
 
 # Requirements
 * Tensorflow 1.3+
