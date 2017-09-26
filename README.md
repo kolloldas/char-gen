@@ -41,21 +41,44 @@ Before training the data is preprocessed and cached into a file. To rebuild the 
 After training is completed simply run the python file to generate samples
 ```
 python gen.py
+...
+INFO:tensorflow:Prediction 1:  Ardara
+INFO:tensorflow:Prediction 2:  Layton
+INFO:tensorflow:Prediction 3:  Judgene
 ```
 
 To add a primer character sequence:
 ```
 python gen.py --primer=Ad
+...
+INFO:tensorflow:Prediction 1:  Adele
+INFO:tensorflow:Prediction 2:  Adabell
+INFO:tensorflow:Prediction 3:  Addie
 ```
 
 Generate 10 samples:
 ```
 python gen.py --num_samples=10
+...
+INFO:tensorflow:Prediction 1:  Dane
+INFO:tensorflow:Prediction 2:  Merbie
+INFO:tensorflow:Prediction 3:  Lorren
+INFO:tensorflow:Prediction 4:  Rosette
+INFO:tensorflow:Prediction 5:  Merlins
+INFO:tensorflow:Prediction 6:  Curnebel
+INFO:tensorflow:Prediction 7:  Spyrlette
+INFO:tensorflow:Prediction 8:  Ronald
+INFO:tensorflow:Prediction 9:  Selva
+INFO:tensorflow:Prediction 10:  West
 ```
 
-Limit to 6 characters:
+Limit to 4 characters:
 ```
-python gen.py --maxlen=6
+python gen.py --maxlen=4
+...
+INFO:tensorflow:Prediction 1:  Giaz
+INFO:tensorflow:Prediction 2:  Bee
+INFO:tensorflow:Prediction 3:  Oran
 ```
 
 
