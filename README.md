@@ -8,6 +8,7 @@ Get a list of baby names from Kaggle [here](https://www.kaggle.com/kaggle/us-bab
 # Requirements
 * Tensorflow 1.3+
 * Numpy 1.13+
+* Pandas 0.20+
 
 # Usage
 ### Training
